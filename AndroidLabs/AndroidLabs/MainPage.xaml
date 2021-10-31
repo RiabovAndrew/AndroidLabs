@@ -5,8 +5,7 @@
 
     <StackLayout HorizontalOptions="Center">
         <Label x:Name="label1" Text="0" FontSize="30"></Label>
-        <Button x:Name="button1" Clicked="ButtonClicked" Text="Move"></Button>
-        <Button x:Name="button2" Clicked="ButtonClicked2" Text="Stop"></Button>
+        <Button x:Name="button1" Clicked="ButtonClicked" Text="Increment"></Button>
     </StackLayout>
 
 </ContentPage>

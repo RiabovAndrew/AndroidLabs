@@ -12,15 +12,9 @@ namespace AndroidLabs
         {
             InitializeComponent();
         }
-        private async void ButtonClicked(object sender, EventArgs e)
+        private void ButtonClicked(object sender, EventArgs e)
         {
-            //label1.Text = (++num).ToString();
-            await label1.RotateTo(360, 2000);
-        }
-
-        private async void ButtonClicked2(object sender, EventArgs e)
-        {
-            await label1.RotateTo(360, 2000);
+            label1.Text = (++num).ToString();
         }
     }
 }
