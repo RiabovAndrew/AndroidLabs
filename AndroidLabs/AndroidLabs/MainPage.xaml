@@ -4,9 +4,16 @@
              x:Class="AndroidLabs.MainPage"
              BackgroundColor="White">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Order="Primary" Text="Home" Priority="0" Clicked="ButtonClickedToolBoxItem1"/>
+        <ToolbarItem Name="Animation Page" Order="Secondary" Text="Animation Page" Priority="1" Clicked="ButtonClickedToolBoxItem2"/>
+        <ToolbarItem Name="Another Page" Order="Secondary" Text="Another Page" Priority="1" Clicked="ButtonClickedToolBoxItem3"/>
+    </ContentPage.ToolbarItems>
+
     <StackLayout HorizontalOptions="Center">
-        <Button x:Name="button1" Clicked="ButtonClicked" Text="Move"></Button>
-        <Image x:Name="image1" WidthRequest="100" HeightRequest="100" Source="Resources/drawable/two.png"/>
+        <Label x:Name="label1" Text="Home" FontSize="30"></Label>
+        <Button x:Name="button1" Clicked="ButtonClicked" Text="Move" IsVisible="False"></Button>
+        <Image x:Name="image1" WidthRequest="100" HeightRequest="100" Source="Resources/drawable/two.png" IsVisible="False"/>
     </StackLayout>
 
 </ContentPage>
